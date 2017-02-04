@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- For IE9 and later -->
+    <!--[if lte IE 9]>
+   		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <!-- BEGIN container  -->
+    <div class="container">
+    	<!-- BEGIN of header -->
+    	<header>
+    		<i class="header__icon"></i>
+    		<h2 class="header__title">Create your free account</h2>
+    		<p class="header__subtitle">Come and join our cool and amazing community, fill in your details to get started. Already have an account? <a class="header__link" href="#">Log in.</a></p>
+    	</header>
+    	<!-- END of header -->
+        <!-- BEGIN main  -->
+        <main role="main">
+           <form action="#">
+           	<fieldset class="account-info">
+	           <input type="text" placeholder="First name" required>
+	           <input type="text" placeholder="Last name" required>
+	           <input type="email" placeholder="Email address" required>
+	           <input type="password" placeholder="Password" required>
+	        </fieldset>
+           	<button class="btn" type="submit"><span>Sign up for free</span></button>
+           </form>
+        </main>
+        <!-- END main -->
+        <!-- BEGIN of footer -->
+        <footer>
+        	<p>By clicking on “Sign up for free”, you agree to the
+	        	<a class="footer__link" href="#">Terms of Service</a> and the
+	        	<a class="footer__link" href="#">Privacy Policy</a>
+        	</p>
+        </footer>
+        <!-- END of footer -->
+    </div>
+    <!-- END container -->
+</body>
+</html>

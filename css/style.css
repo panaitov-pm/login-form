@@ -1,0 +1,223 @@
+/* -----------------------------------------
+ PLACEHOLDER
+----------------------------------------- */
+
+input[placeholder] {text-overflow: ellipsis;}
+input::-moz-placeholder {text-overflow: ellipsis;}
+input:-moz-placeholder {text-overflow: ellipsis;}
+input:-ms-input-placeholder {text-overflow: ellipsis;}
+
+*::-webkit-input-placeholder {
+    color: #7a7b7f;
+    transition: color 0.4s ease-in-out;
+}
+*:-moz-placeholder {
+    color: #7a7b7f;
+    transition: color 0.4s ease-in-out;
+}
+*::-moz-placeholder {
+    color: #7a7b7f;
+    transition: color 0.4s ease-in-out;
+}
+*:-ms-input-placeholder {
+    color: #7a7b7f;
+    transition: color 0.4s ease-in-out;
+}
+*::-ms-input-placeholder {
+    color: #7a7b7f;
+    transition: color 0.4s ease-in-out;
+}
+
+input:focus::-webkit-input-placeholder {color: transparent;}
+input:focus::-moz-placeholder {color: transparent;}
+input:focus:-moz-placeholder {color: transparent;}
+input:focus:-ms-input-placeholder {color: transparent;}
+
+input:required:valid {
+    box-shadow: 0 0 4px green;
+}
+
+/* -----------------------------------------
+ GLOBAL
+----------------------------------------- */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+
+}
+
+body {
+    padding-top: 100px;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(29deg, #ff512f 0%, #dd2476 100%);
+    color: #7a7b7f;
+}
+
+fieldset,
+input,
+button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    outline: 0;
+}
+
+/* -----------------------------------------
+ VARIABLES
+----------------------------------------- */
+:root {
+    --main-color: #ea355a;
+}
+
+/* -----------------------------------------
+ CONTAINER
+----------------------------------------- */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 460px;
+    padding: 2.2%; /*30px*/
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+/* -----------------------------------------
+ HEADER
+----------------------------------------- */
+.header__title {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1b1c1d;
+}
+
+.header__icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/sign-up-icon.png');
+}
+
+.header__subtitle {
+    margin: 15px 0 34px;
+    font-size: 13px;
+    line-height: 1.54; /*20px*/
+}
+
+.header__link {
+    color: var(--main-color);
+}
+
+/* -----------------------------------------
+ MAIN
+----------------------------------------- */
+.account-info input{
+    margin-bottom: 15px;
+    padding: 12px 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.account-info input[type='text'] {
+    display: inline-block;
+    margin-right: 3.5%; /*14px*/
+    width: 48.25%;
+}
+
+.account-info input[type='text']:nth-child(2n) {
+    margin-right: 0;
+}
+
+.account-info input[type='email'],
+.account-info input[type='password'] {
+    width: 100%;
+}
+
+.account-info a:focus,
+.account-info input:focus{
+    outline: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 3px var(--main-color);
+}
+
+.btn {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    box-shadow: 0 3px 0 #bd1962;
+    overflow: hidden;
+    background-color: var(--main-color);
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.btn span {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:before,
+.btn:after {
+    position: absolute;
+    width: 120%;
+    height: 40px;
+    border: 70px solid;
+    transition: all 0.4s ease-in-out;
+    content: '';
+}
+
+.btn:before {
+    top: -73px;
+    left: -120%;
+    border-color: transparent transparent #fff transparent;
+}
+
+.btn:after {
+    top: -3px;
+    right: -120%;
+    border-color: #fff transparent transparent transparent;
+}
+
+.btn:hover:before {
+    left: 0;
+}
+
+.btn:hover:after {
+    right: 0;
+}
+
+.btn:hover span {
+    color: var(--main-color);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #bd1962;
+}
+
+/* -----------------------------------------
+ FOOTER
+----------------------------------------- */
+footer {
+    padding: 25px 0 30px;
+    font-size: 13px;
+    line-height: 1.54; /*20px*/
+}
+
+.footer__link {
+    color: var(--main-color);
+}
